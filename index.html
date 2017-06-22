@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="counter" data-total="0">
+        <h1 id="total">
+             0 Calories
+        </h1>
+    </div>
+    <form action="#" id="add">
+        <input type="text" class="type" placeholder="Food / Drink" required>
+        <input type="number" id="cals" placeholder="Calories" required>
+        <button type="submit">Add</button>
+    </form>
+    <table id="items">
+        <tr>
+            <td>Food / Drink</td>
+            <td>Calories</td>
+        </tr>
+        <tr>
+            <td>Pizza</td>
+            <td>400</td>
+        </tr>
+    </table>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
