@@ -1,9 +1,8 @@
-import {counter} from 'counter.js'; 
+import { counter } from './counter.js'; 
 const form = document.getElementById('add'); 
 const cals = document.getElementById('cals'); 
 const type = document.getElementById('type'); 
 const table = document.getElementById('items'); 
-console.log*(counter);
 form.onsubmit = function (event) {
     event.preventDefault();    
     let row = document.createElement('tr'); 
@@ -14,6 +13,6 @@ form.onsubmit = function (event) {
     row.appendChild(cellType);
     row.appendChild(cellCals); 
     table.appendChild(row); 
-    let counterObject = new counter(); 
+    let counterObject = new counter('#counter', cals.value); 
         counterObject.update();
 }
